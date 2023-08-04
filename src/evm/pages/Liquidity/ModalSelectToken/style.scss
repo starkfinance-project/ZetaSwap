@@ -1,0 +1,98 @@
+.modal-network-wrapper {
+    height: 100px;
+    width: 100px;
+}
+
+.ant-modal-mask {
+    background-color: #211e38d2;
+    backdrop-filter: blur(20px);
+    -webkit-filter: blur(20px);
+}
+
+.ant-modal-content {
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.ant-modal {
+    width: 100% !important;
+    max-width: 400px;
+}
+
+.ant-modal-body {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 30px;
+    background-color: transparent;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 !important;
+    border-radius: 10px;
+
+    .select-token-modal {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+
+        .header-modal-wrapper {
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .search-wrapper {
+                height: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                padding: 0 10px;
+                border: 1px solid #adb5bd;
+                border-radius: 5px;
+
+                img {
+                    height: 30px;
+                    width: 30px;
+                }
+
+                input {
+                    height: 100%;
+                    flex: 1;
+                    background: none;
+                    outline: none;
+                    border: none;
+
+                    color: white;
+                }
+            }
+        }
+
+        .line {
+            height: 1px;
+            background-color: #adb5bd;
+        }
+
+        .list-wrapper {
+            margin-top: 10px;
+            .item-wrapper {
+                padding: 10px 30px;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: rgb(173, 181, 189, 0.5);
+                }
+            }
+        }
+    }
+}
+
+.icon-wrapper {
+    height: 50px;
+    width: 50px;
+}
+
+.ant-modal-close {
+    color: white;
+}

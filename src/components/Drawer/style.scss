@@ -1,0 +1,38 @@
+.drawer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.drawer-wrapper {
+  position: fixed;
+  top: 0%;
+  left: 0;
+  z-index: 1050;
+  width: fit-content;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  .drawer {
+    width: 300px;
+    height: 100%;
+    background-color: #120e25;
+    padding: 32px 24px;
+    border-right: 1px solid #1c1c42;
+
+    transition: width 0.5s ease-in-out;
+
+    .drawer__item {
+      padding: 14px 4px;
+      text-align: end;
+      color: #9393c4;
+      border-bottom: 1px solid #1c1c42;
+    }
+  }
+}

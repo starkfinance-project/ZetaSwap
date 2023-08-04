@@ -1,0 +1,89 @@
+.s-page {
+    height: inherit;
+    overflow-y: auto;
+
+    .form-wrapper {
+        max-width: 400px;
+        width: 100%;
+
+        background-color: #28183e;
+        border-radius: 10px;
+        margin: 50px auto;
+        padding: 15px;
+
+        .title-claim {
+            font-family: 'Poppins', sans-serif !important;
+            color: #017ee7;
+        }
+
+        .title-noactive {
+            color: gray;
+            &:hover {
+                cursor: pointer;
+                color: var(--primary-color);
+            }
+        }
+        .slippage-input {
+            width: 40px;
+            border: none;
+            outline: none;
+            background: #382d4c;
+            color: white;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .input-balance-wrapper {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 10px;
+            padding-right: 4px;
+            p {
+                font-size: 12px;
+                text-align: right;
+                color: #a09ba9 !important;
+            }
+        }
+
+        .input-wrapper {
+            height: 100%;
+            width: 100%;
+            background-color: rgb(58 44 78);
+            border-radius: 10px;
+
+            h4 {
+                width: 60%;
+                font-size: 20px;
+                border: none;
+                outline: none;
+                background: none;
+                color: white;
+                flex: 1;
+            }
+
+            input {
+                width: 60%;
+                font-size: 20px;
+                border: none;
+                outline: none;
+                background: none;
+                color: white;
+                flex: 1;
+            }
+
+            .option-wrapper {
+                border-radius: 30px;
+                background: #473b5f;
+                padding: 4px;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .icon-swap-wrapper {
+            margin: 10px auto;
+            border-radius: 12px;
+            padding: 5px;
+        }
+    }
+}

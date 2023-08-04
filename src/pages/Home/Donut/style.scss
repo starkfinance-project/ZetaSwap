@@ -1,0 +1,99 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.donut-chart {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 2rem;
+    border-radius: 100%;
+}
+p.center {
+    background: #394264;
+    position: absolute;
+    text-align: center;
+    font-size: 28px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 130px;
+    height: 130px;
+    margin: auto;
+    border-radius: 50%;
+    line-height: 35px;
+    padding: 15% 0 0;
+}
+
+.portion-block {
+    border-radius: 50%;
+    clip: rect(0px, 200px, 200px, 100px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+.circle {
+    border-radius: 50%;
+    clip: rect(0px, 100px, 200px, 0px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    font-family: monospace;
+    font-size: 1.5rem;
+}
+
+#part1 {
+    transform: rotate(0deg);
+}
+
+#part1 .circle {
+    background-color: #e64c65;
+    /*transform: rotate(76deg);*/
+    animation: first 1s 1 forwards;
+}
+
+#part2 {
+    transform: rotate(100deg);
+}
+#part2 .circle {
+    background-color: #11a8ab;
+    animation: second 1s 1 forwards 1s;
+}
+#part3 {
+    transform: rotate(250deg);
+}
+#part3 .circle {
+    background-color: #4fc4f6;
+    animation: third 0.5s 1 forwards 2s;
+}
+
+/* Animation */
+@keyframes first {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(100deg);
+    }
+}
+
+@keyframes second {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(150deg);
+    }
+}
+
+@keyframes third {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(111deg);
+    }
+}

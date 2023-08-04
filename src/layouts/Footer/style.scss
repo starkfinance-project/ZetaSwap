@@ -1,0 +1,25 @@
+.footer-layout {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+
+    // background-color: #171717;
+    padding: 100px 20px;
+
+    .footer-title {
+        // background: -webkit-linear-gradient(#3740fb, var(--primary-color));
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+        color: var(--primary-color) !important;
+        font-weight: 700;
+    }
+
+    .project-name {
+        font-family: 'Changa', sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+    }
+}

@@ -1,0 +1,63 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&family=Changa:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+:root {
+    --color-background: #0e0a1f;
+
+    --color-text-default: #000;
+}
+
+html {
+    font-size: 62.5%;
+
+    @media (max-width: 768px) {
+        font-size: 8px !important;
+    }
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem !important;
+    line-height: 1.5 !important;
+    text-rendering: optimizeSpeed;
+    color: var(--color-text-default);
+    background: var(--color-background) !important;
+    margin: 0;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+
+    object-fit: contain;
+}
+
+* {
+    box-sizing: border-box !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+// hidden arrows for input elements
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+    -moz-appearance: textfield;
+}

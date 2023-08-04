@@ -1,0 +1,137 @@
+$sizes: 100;
+
+@mixin margin-classes {
+  @for $i from 1 through $sizes {
+    $margin: $i * 0.1rem;
+    /* margin #{$margin} */
+    .m-#{$i} {
+      margin: $margin;
+    }
+    .ml-#{$i} {
+      margin-left: $margin;
+    }
+    .mr-#{$i} {
+      margin-right: $margin;
+    }
+    .mt-#{$i} {
+      margin-top: $margin;
+    }
+    .mb-#{$i} {
+      margin-bottom: $margin;
+    }
+    .mx-#{$i} {
+      margin-left: $margin;
+      margin-right: $margin;
+    }
+    .my-#{$i} {
+      margin-top: $margin;
+      margin-bottom: $margin;
+    }
+  }
+}
+@include margin-classes;
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin padding-classes {
+  @for $i from 1 through $sizes {
+    $padding: $i * 0.1rem;
+    /* padding #{$padding} */
+    .p-#{$i} {
+      padding: $padding;
+    }
+    .pl-#{$i} {
+      padding-left: $padding;
+    }
+    .pr-#{$i} {
+      padding-right: $padding;
+    }
+    .pt-#{$i} {
+      padding-top: $padding;
+    }
+    .pb-#{$i} {
+      padding-bottom: $padding;
+    }
+    .px-#{$i} {
+      padding-left: $padding;
+      padding-right: $padding;
+    }
+    .py-#{$i} {
+      padding-top: $padding;
+      padding-bottom: $padding;
+    }
+  }
+}
+@include padding-classes;
+
+@mixin gap-classes {
+  @for $i from 1 through $sizes {
+    $gap: $i * 0.1rem;
+    .g-#{$i} {
+      gap: $gap;
+    }
+  }
+}
+@include gap-classes;
+
+$font-size: 100;
+
+@mixin fontsize-classes {
+  @for $i from 1 through $font-size {
+    $fontSize: $i * 0.1rem;
+    .fz-#{$i} {
+      font-size: $fontSize;
+    }
+  }
+}
+@include fontsize-classes;
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+    width: 100%;
+  }
+}
+
+.fw-4 {
+  font-weight: 400;
+}
+
+.fw-7 {
+  font-weight: 700;
+}
+
+.fw-3 {
+  font-weight: 300;
+}

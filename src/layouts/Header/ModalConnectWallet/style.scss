@@ -1,0 +1,49 @@
+.modal-network-wrapper {
+    height: 100px;
+    width: 100px;
+}
+
+.ant-modal-mask {
+    background-color: #211e38d2;
+    backdrop-filter: blur(20px);
+    -webkit-filter: blur(20px);
+}
+
+.ant-modal-content {
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.ant-modal {
+    width: 100% !important;
+    max-width: 400px;
+}
+
+.ant-modal-body {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 30px;
+    background-color: transparent;
+    color: var(--white);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+
+    .modal-wrapper {
+        width: 100%;
+        padding: 4rem !important;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.icon-wrapper {
+    height: 50px;
+    width: 50px;
+}
+
+.ant-modal-close {
+    color: white;
+}
